@@ -10,6 +10,8 @@ class PageController extends Controller
 {
     public function index(){
 
+        //metodo per prendere tutti i film dal database
+        
         $movies = Movie::all();
 
         return view('home',compact('movies'));

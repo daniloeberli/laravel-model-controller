@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Usiamo un controller per il routing della pagina iniziale
 Route::get('/',[PageController::class,'index']);

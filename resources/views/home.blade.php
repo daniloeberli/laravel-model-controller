@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h1>Movies</h1>
-
+            <!-- elemento card per visualizzare i dati in pagina -->
             @foreach ($movies as $movie)
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
