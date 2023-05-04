@@ -1,2 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 
+body{
+    background-color: #5983FC;
+
+    h1{
+        color: white;
+    }
+}
+
+.card{
+    color: white;
+    background-color: #3E60C1;
+    min-height: 14rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

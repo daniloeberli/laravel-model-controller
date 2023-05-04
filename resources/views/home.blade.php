@@ -6,21 +6,25 @@
         <title>Laravel</title>
          @vite('resources/js/app.js')
     </head>
-    <body>
+    <body class="p-3">
         <div class="container">
-            <h1>Movies</h1>
+            <h1 class="text-center">Movies</h1>
             <!-- elemento card per visualizzare i dati in pagina -->
-            @foreach ($movies as $movie)
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">{{$movie->title}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{$movie->original_title}}</h6>
-                    <p class="card-text">{{$movie->nationality}}</p>
-                    <p class="card-text">{{$movie->date}}</p>
-                    <p class="card-text">{{$movie->vote}}</p>
+            <div class="row">
+                @foreach ($movies as $movie)
+                <div class="col col-sm-6 col-md-3 g-3">
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{$movie->title}}</h5>
+                            <h6 class="card-subtitle mb-2">{{$movie->original_title}}</h6>
+                            <p class="card-text">{{$movie->nationality}}</p>
+                            <p class="card-text">{{$movie->date}}</p>
+                            <p class="card-text">{{$movie->vote}}</p>
+                        </div>
                     </div>
                 </div>
-            @endforeach
+                @endforeach
+            </div>            
         </div>
 
     </body>
